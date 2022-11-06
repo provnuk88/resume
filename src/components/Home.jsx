@@ -2,7 +2,7 @@ import React from "react";
 import HeroImage from "../assets/heroImage.jpg";
 import { MdOutlineKeyboardArrowRight } from "react-icons/md";
 import { Link } from "react-scroll";
-
+import SocialLinks from "./SocialLinks";
 const Home = () => {
   return (
     <div
@@ -15,11 +15,10 @@ const Home = () => {
           Perminov Dmitriy
           </h2>
           <p className="text-gray-200 py-4 max-w-md pl-px 5">
-          На данный момент активно изучаю все востребованные технологи в среде frontend разработки
+          На данный момент активно изучаю все востребованные и популярные технологии в среде frontend разработки.
           Разбираюсь в популярных библиотеках связанных с react приложениями.
-          Постоянно совершенствую свои навыки в среде разработки 
+          Постоянно совершенствую свои навыки.
           </p>
-
           <div>
             <Link
               to="portfolio"
@@ -42,6 +41,7 @@ const Home = () => {
             className="rounded-2xl mx-auto w-2/3 md:w-full"
           />
         </div>
+        <SocialLinks />
       </div>
     </div>
   );

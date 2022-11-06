@@ -10,7 +10,7 @@ const SocialLinks = () => {
       id: 1,
       child: (
         <>
-          LinkedIn <FaLinkedin size={30} />
+      LinkedIn <FaLinkedin className="pl-1.5 " size={30} />
         </>
       ),
       href: "https://www.linkedin.com/in/dmitriy-perminov-b62257231/",
@@ -20,7 +20,7 @@ const SocialLinks = () => {
       id: 2,
       child: (
         <>
-          GitHub <FaGithub size={30} />
+       GitHub <FaGithub className="pl-1.5"size={30} />
         </>
       ),
       href: "https://github.com/provnuk88",
@@ -29,7 +29,7 @@ const SocialLinks = () => {
       id: 3,
       child: (
         <>
-          Mail <HiOutlineMail size={30} />
+       Mail <HiOutlineMail className="pl-1.5" size={30} />
         </>
       ),
       href: "proovnuk1997@gmail.com",
@@ -38,7 +38,7 @@ const SocialLinks = () => {
       id: 4,
       child: (
         <>
-          Resume <BsFillPersonLinesFill size={30} />
+        Resume <BsFillPersonLinesFill className="pl-1.5" size={30} />
         </>
       ),
       href:resume,
@@ -48,20 +48,18 @@ const SocialLinks = () => {
   ];
 
   return (
-    <div className="hidden lg:flex flex-col top-[35%] left-0 fixed">
-      <ul>
-        {links.map(({ id, child, href, style, download }) => (
+    <div className="lg:flex flex-col background-color: transparent ">
+      <ul className="pl-1">
+        {links.map(({ id, child, href,style, download }) => (
           <li
             key={id}
             className={
-              "flex justify-between items-center w-40 h-14 px-4 ml-[-100px] hover:ml-[-10px] hover:rounded-md duration-300 bg-gray-500" +
-              " " +
-              style
+              "flex w-15 h-14 px-4 h-8 background-color: transparent  "
             }
           >
             <a
               href={href}
-              className="flex justify-between items-center w-full text-white"
+              className="flex justify-left items-center  w-full text-white"
               download={download}
               target="_blank"
               rel="noreferrer"
